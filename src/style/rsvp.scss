@@ -1,0 +1,55 @@
+.rsvp-form-wrapper {
+    background-color: #fffaf1;
+    padding: 85px;
+}
+
+.text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.one-column, .two-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+
+    input {
+        position: relative;
+        z-index: 1;
+        -webkit-appearance: none;
+        padding: 16px;
+        font-size: .8125rem;
+        border: none;
+        outline: 0;
+        border: 1px solid #ccc;
+        letter-spacing: .5px; 
+    }
+}
+
+.one-column input {
+    width: 37%;
+}
+
+.two-column input {
+    width: 17%;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.btn {
+    font-size: 18px;
+    letter-spacing: .5px;
+    font-family: 'Gupter', serif;
+    background-color: whitesmoke;
+    transition: .5s ease;
+    cursor: pointer;
+    border-radius: 3px;
+    position:absolute;
+    margin-bottom: 40px;
+    bottom: 10%;
+    right: 48%;
+}

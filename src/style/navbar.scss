@@ -1,0 +1,55 @@
+.navbar-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $background;
+    color: $textColor;
+    letter-spacing: 1px;
+
+    .middle {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 55vw;
+        font-size: 27px;
+    }
+
+    .navbar-link-wrapper {
+        display: flex;
+        padding: 60px;
+        padding-bottom: 0px;
+
+        a:visited, a:link {
+            text-decoration: none;
+            color: $textColor;
+            font-size: 17px;
+            text-transform: uppercase;
+        }
+
+        .navbar-active {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: $textColor;
+            font-size: 17px;
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: 0.5s ease-in-out;
+        }
+    }
+}
+
+.countdown-wrapper {
+    display: flex;
+    flex-direction: row;
+
+    .countdown-item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        font-size: 18px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin: 5px;
+    }
+}

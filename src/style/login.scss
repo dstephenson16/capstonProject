@@ -1,0 +1,53 @@
+.auth-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(90vh - 84px);
+
+    .left-column {
+        background-size: cover;
+    }
+
+    .right-column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fffaf1;
+        font-size: 24px;
+
+        .login-text {
+            margin-bottom: 15px;
+        }
+
+        .login-input {
+            display: flex;
+            justify-content: center;
+            padding: 2px;
+
+            input {
+                position: relative;
+                z-index: 1;
+                -webkit-appearance: none;
+                font-size: .8125rem;
+                letter-spacing: .5px; 
+                width: 100%;
+                padding: 8px;
+                border: none;
+                outline: 0;
+                border: 1px solid #ccc;
+            }
+        }
+
+        .login-btn {
+            font-size: 25px;
+            letter-spacing: .5px;
+            font-family: 'Gupter', serif;
+            background-color: whitesmoke;
+            transition: .5s ease;
+            cursor: pointer;
+            border-radius: 3px;
+            position:absolute;
+            bottom: 30%;
+            right: 23.5%;
+        }
+    }
+}

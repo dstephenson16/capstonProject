@@ -15,11 +15,22 @@ const NavbarComponent = props => {
         )
     }
 
+    const handleSignOut = () => {
+        // Code 
+        (request => {
+            if (request.status === 200 ) {
+                props.history.push("/");
+                props.handleSuccessfulLogout();
+            }
+            return request.data
+        })
+    }
+
     return (
         <div className="navbar-wrapper">
             <div className="rsvp-data-link">
                 {props.loggedInStatus === true ? (
-                    dynamicLink("/rsvp-data", "Rsvp Data")
+                    dynamicLink("/rsvp-admin", "Rsvp Data")
                 ) : null }
             </div>
 
@@ -47,14 +58,14 @@ const NavbarComponent = props => {
 
             <div className="rsvp-link">
                 <div className="navbar-link-wrapper">
-                    <NavLink to="/rsvp" activeClassName="navbar-active">
+                    <NavLink to="/rsvp-form" activeClassName="navbar-active">
                         Rsvp
                     </NavLink>
                 </div>
             </div>
 
                 {props.loggedInStatus === true ? (
-                    <button type="text" className="sign-out-btn" onClick={handleSignOut}>Logout</button>
+                    <button type="button" className="sign-out-btn" onClick={handleSignOut}>Logout</button>
                 ) : null }
         </div>
     )

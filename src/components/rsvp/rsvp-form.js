@@ -14,7 +14,8 @@ export default class Rsvp extends Component {
             postal_code: "",
             phone_number: "",
             email: "",
-            partner_name: ""
+            partner_name: "",
+            response_text: ""
         }
 
         this.handleChange = this.handleChange.bind(this);
@@ -48,7 +49,9 @@ export default class Rsvp extends Component {
         .then(request => request.json())
         .then(data => {
             if (data == "Rsvp Created") {
-                this.getRsvpData()
+                this.setState({
+                    response_text: data
+                })
             }
         })
         .catch(error => {
@@ -59,6 +62,9 @@ export default class Rsvp extends Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit} className="rsvp-form-wrapper">
+
+                {this.state.response_text}
+                
                 <div className="rsvp-form">
 
                     <div className="text-wrapper">Please Fill Out</div>

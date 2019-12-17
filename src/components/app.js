@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './navbar/navbar';
 import Footer from './footer/footer';
 import Home from './homepage/home';
-import Rsvp from './rsvp/rsvp';
+import RsvpAdmin from './rsvp/rsvp-admin';
+import RsvpForm from './rsvp/rsvp-form';
 import Auth from './login/auth';
 
 export default class App extends Component {
@@ -38,31 +39,60 @@ export default class App extends Component {
     });
   }
 
+  authorizedPages() {
+    return [
+      <Route 
+      key="rsvp-admin"
+      path="/rsvp-admin"
+      component={RsvpAdmin} />
+    ]
+  }
+
+  componentDidMount() {
+    this.authorizedPages();
+  }
+
   render() {
     return (
       <div className='app'>
-        <Navbar />
+        <Navbar 
+          loggedInStatus = {this.state.loggedInStatus}
+        />
         <Footer />
-        <Router>
-          <Switch>
-            <Route exact path="/" component={Home} />
 
-            <Route path="/rsvp" component={Rsvp} />
+            {this.state.loggedInStatus === true ? this.authorizedPages() : null }
 
-            <Route 
-            key="auth" 
-            path="/auth" 
-            render={props => (
-              <Auth 
-              {...props}
-              handleSuccessfulLogin = {this.handleSuccessfulLogin}
-              handleUnsuccessfulLogin = {this.handleUnsuccessfulLogin}
-              />
+            <Route
+              key="home" 
+              exact path="/"
+              render={props => (
+                <Home
+                {...props}
+                />
             )}
             />
 
-          </Switch>
-        </Router>
+            <Route 
+              key="rsvp-form"
+              path="/rsvp-form"
+              render={props => (
+                <RsvpForm
+                {...props}
+                />
+            )} 
+            />
+
+            <Route 
+              key="auth" 
+              path="/auth" 
+              render={props => (
+                <Auth 
+                {...props}
+                handleSuccessfulLogin = {this.handleSuccessfulLogin}
+                handleUnsuccessfulLogin = {this.handleUnsuccessfulLogin}
+                />
+            )}
+            />
       </div>
     );
   }

@@ -16,15 +16,9 @@ const NavbarComponent = props => {
     }
 
     const handleSignOut = () => {
-        // Code 
-        (request => {
-            if (request.status === 200 ) {
-                props.history.push("/");
-                props.handleSuccessfulLogout();
-            }
-            return request.data
-        })
-    }
+         props.history.push("/");
+         props.handleSuccessfulLogout();
+     }
 
     return (
         <div className="navbar-wrapper">

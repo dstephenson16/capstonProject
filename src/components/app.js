@@ -57,6 +57,7 @@ export default class App extends Component {
       <div className='app'>
         <Navbar 
           loggedInStatus = {this.state.loggedInStatus}
+          handleSuccessfulLogout = {this.handleSuccessfulLogout}
         />
         <Footer />
 

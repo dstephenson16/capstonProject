@@ -1,4 +1,11 @@
 .forms-container {
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+    color: #919191;
+    padding: 10px;
     background-color: #e6dff5;
 }
 
@@ -11,7 +18,7 @@
     padding: 30px;
 }
 
-.form {
+.kyle {
     display: flex;
     justify-content: row;
     align-items: center;
@@ -27,7 +34,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .form {
+    .dami {
       width: 100%;
     }
   }

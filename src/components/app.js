@@ -13,7 +13,7 @@ export default class App extends Component {
     super(props)
 
     this.state = {
-      loggedInStatus: false
+      loggedInStatus: true
     }
 
     this.handleSuccessfulLogin = this.handleSuccessfulLogin.bind(this);

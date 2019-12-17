@@ -48,7 +48,7 @@ export default class Rsvp extends Component {
         })
         .then(request => request.json())
         .then(data => {
-            if (data == "Rsvp Created") {
+            if (data == "Rsvp created, please check your email!") {
                 this.setState({
                     response_text: data
                 })

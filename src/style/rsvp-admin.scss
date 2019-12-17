@@ -1,6 +1,6 @@
 .forms-container {
     display: flex;
-    justify-content: row;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     font-size: 18px;
@@ -20,21 +20,19 @@
 
 .kyle {
     display: flex;
-    justify-content: row;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     font-size: 18px;
     color: #919191;
     letter-spacing: .5px; 
-    float: left;
-    width: 31.8%;
+    column-count: 3;
     padding: 10px;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    width: 100%;
 }
 
 @media screen and (max-width: 600px) {
-    .dami {
+    .kyle {
       width: 100%;
     }
   }

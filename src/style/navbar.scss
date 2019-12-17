@@ -68,3 +68,36 @@
         margin: 5px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .navbar-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+
+        .middle {
+            font-size: 17px;
+        }
+
+        .navbar-link-wrapper {
+            padding: 10px;
+
+            a:visited, a:link {
+                font-size: 15px;
+                text-transform: none;
+            }
+        }
+
+        .sign-out-btn {
+            font-size: 10px;
+        }
+    }
+
+    .countdown-wrapper {
+        .countdown-item {
+            font-size: 15px;
+            text-transform: none;
+        }
+    }
+}

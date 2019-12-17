@@ -31,11 +31,11 @@
 }
 
 .one-column input {
-    width: 37%;
+    width: 36.6vw;
 }
 
 .two-column input {
-    width: 17%;
+    width: 17vw;
     margin-left: 2px;
     margin-right: 2px;
 }
@@ -52,4 +52,26 @@
     margin-bottom: 40px;
     bottom: 10%;
     right: 48%;
+}
+
+@media screen and (max-width: 600px) {
+    .rsvp-form-wrapper {
+        .text-wrapper {
+            font-size: 20px
+        }
+
+        .one-column input {
+            width: 42vw;
+            font-size: 11px;
+        }
+
+        .two-column input {
+            font-size: 11px;
+        }
+    }
+
+    .btn {
+        bottom: 15%;
+        right: 43%;
+    }
 }

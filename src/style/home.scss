@@ -1,7 +1,15 @@
-.img {
-    background-size: contain;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    width: 100vw;
-    height: 610px;
+.home-wrapper {
+    height: 100vh;
+
+    .home-image-wrapper {
+        height: 100vh;
+    }
+
+    .img {
+        background-size: contain;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        width: 100vw;
+        height: 80%;
+    }
 }

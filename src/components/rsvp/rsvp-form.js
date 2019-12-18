@@ -30,7 +30,7 @@ export default class Rsvp extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
-        fetch("https://dscapstonproject.herokuapp.com/rsvp", {
+        fetch("https://dscapstoneproject.herokuapp.com/rsvp", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({

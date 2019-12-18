@@ -58,11 +58,11 @@ const NavbarComponent = props => {
                 </div>
             </div>
 
-            <div className="navbar-link-wrapper">
+            {/* <div className="navbar-link-wrapper"> */}
                 {props.loggedInStatus === true ? (
                     <button type="button" className="sign-out-btn" onClick={handleSignOut}>Logout</button>
                 ) : null }
-            </div>
+            {/* </div> */}
         </div>
     )
 }

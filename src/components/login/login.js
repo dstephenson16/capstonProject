@@ -23,7 +23,7 @@ export default class Login extends Component {
 
     handleLogin() {
         event.preventDefault();
-        fetch("https://dscapstoneproject.herokuapp.com/auth/verify", {
+        fetch("https://dsweddingbackend.herokuapp.com/auth/verify", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify({

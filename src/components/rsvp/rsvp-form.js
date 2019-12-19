@@ -48,6 +48,7 @@ export default class Rsvp extends Component {
         })
         .then(request => request.json())
         .then(data => {
+            console.log(data)
             if (data == "Rsvp created, please check your email. If can't find, check spam as well!") {
                 this.setState({
                     response_text: data
@@ -62,8 +63,6 @@ export default class Rsvp extends Component {
     render() {
         return (
             <form onSubmit={this.handleSubmit} className="rsvp-form-wrapper">
-
-                {this.state.response_text}
                 
                 <div className="rsvp-form">
 
@@ -101,12 +100,9 @@ export default class Rsvp extends Component {
                     <div className="one-column">
                         <input type="text" name="partner_name" placeholder="Significant Other/Plus One (Optional)" value={this.state.partner_name} onChange={this.handleChange} />
                     </div>
-
+                    
                     <button className="btn" type="submit">Submit</button>
-
-                    <div className="email-text">
-                        Once Submitted, check spam folder in email if not in inbox
-                    </div>
+                    <h4>{this.state.response_text}</h4>
 
                 </div>
             </form>

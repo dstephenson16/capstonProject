@@ -105,7 +105,7 @@ export default class Rsvp extends Component {
                     <button className="btn" type="submit">Submit</button>
 
                     <div className="email-text">
-                        Please Check Email & Spam
+                        Once Submitted, check spam folder in email if not in inbox
                     </div>
 
                 </div>

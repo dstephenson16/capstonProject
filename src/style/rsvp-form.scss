@@ -71,17 +71,22 @@
         .one-column input {
             width: 42vw;
             font-size: 11px;
-            padding: 3px;
+            margin-left: -5px;
+            margin-right: -5px;
+            padding: 2px;
         }
 
         .two-column input {
             font-size: 11px;
-            padding: 8.4px;
+            padding: 7.3px;
+            margin-left: 2px;
+            margin-right: 2px;
         }
     }
 
     .btn {
         bottom: 15%;
         right: 37%;
+        font-size: 12px;
     }
 }

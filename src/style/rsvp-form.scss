@@ -1,5 +1,5 @@
 .rsvp-form-wrapper {
-    background-color: #fffaf1;
+    //background-color: #fffaf1;
     object-fit: cover;
     padding: 85px;
 }
@@ -62,7 +62,7 @@
 
 @media screen and (max-width: 600px) {
     .rsvp-form-wrapper {
-        background-size: contain;
+        background-size: none;
         width: 65vw;
         .text-wrapper {
             font-size: 20px;
@@ -71,17 +71,17 @@
         .one-column input {
             width: 42vw;
             font-size: 11px;
-            padding: 6.5px;
+            padding: 5.5px;
         }
 
         .two-column input {
             font-size: 11px;
-            padding: 10px;
+            padding: 9px;
         }
     }
 
     .btn {
-        bottom: 25%;
-        right: 43%;
+        bottom: 22%;
+        right: 40%;
     }
 }

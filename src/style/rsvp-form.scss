@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     font-size: 28px;
-    margin-bottom: 15px;
+    margin-top: -45px
 }
 
 .one-column, .two-column {
@@ -49,8 +49,14 @@
     cursor: pointer;
     border-radius: 3px;
     position:absolute;
-    bottom: 10%;
+    bottom: 13%;
     right: 48%;
+}
+
+.email-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 600px) {

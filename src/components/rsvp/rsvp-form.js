@@ -67,7 +67,9 @@ export default class Rsvp extends Component {
                 
                 <div className="rsvp-form">
 
-                    <div className="text-wrapper">Please Fill Out</div>
+                    <div className="text-wrapper">
+                        Please Fill Out
+                    </div>
 
                     <div className="two-column">
                         <input type="text" name="first_name" placeholder="First Name" value={this.state.first_name} onChange={this.handleChange} required/>
@@ -103,8 +105,9 @@ export default class Rsvp extends Component {
                     <button className="btn" type="submit">Submit</button>
 
                     <div className="email-text">
-                        Rsvp created, please check your email. If can't find, check spam as well!
+                        Please Check Email & Spam
                     </div>
+
                 </div>
             </form>
         )

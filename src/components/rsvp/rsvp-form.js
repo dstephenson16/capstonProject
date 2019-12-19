@@ -48,7 +48,7 @@ export default class Rsvp extends Component {
         })
         .then(request => request.json())
         .then(data => {
-            if (data == "Rsvp created, please check your email!") {
+            if (data == "Rsvp created, please check your email. If can't find, check spam as well!") {
                 this.setState({
                     response_text: data
                 })
@@ -101,6 +101,10 @@ export default class Rsvp extends Component {
                     </div>
 
                     <button className="btn" type="submit">Submit</button>
+
+                    <div className="email-text">
+                        Rsvp created, please check your email. If can't find, check spam as well!
+                    </div>
                 </div>
             </form>
         )

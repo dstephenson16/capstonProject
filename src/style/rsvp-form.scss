@@ -63,7 +63,7 @@
 @media screen and (max-width: 600px) {
     .rsvp-form-wrapper {
         background-size: none;
-        width: 65vw;
+        width: 58vw;
         .text-wrapper {
             font-size: 20px;
         }
@@ -71,17 +71,17 @@
         .one-column input {
             width: 42vw;
             font-size: 11px;
-            padding: 5.5px;
+            padding: 3px;
         }
 
         .two-column input {
             font-size: 11px;
-            padding: 9px;
+            padding: 6.5px;
         }
     }
 
     .btn {
-        bottom: 22%;
-        right: 40%;
+        bottom: 15%;
+        right: 37%;
     }
 }

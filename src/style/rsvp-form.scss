@@ -63,6 +63,7 @@
 @media screen and (max-width: 600px) {
     .rsvp-form-wrapper {
         background-size: contain;
+        width: 65vw;
         .text-wrapper {
             font-size: 20px;
         }
@@ -80,7 +81,7 @@
     }
 
     .btn {
-        bottom: 28%;
+        bottom: 25%;
         right: 43%;
     }
 }

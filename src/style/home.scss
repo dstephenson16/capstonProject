@@ -5,3 +5,9 @@
     width: 100vw;
     height: 610px;
 }
+
+@media screen and (max-width: 600px) {
+    .img {
+        height: -webkit-fill-available;
+    }
+}
